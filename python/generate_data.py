@@ -86,12 +86,11 @@ def random_date(start: date, end: date) -> date:
     return start + timedelta(days=random.randint(0, delta_days))
 
 
-def write_customers() -> None:
+def write_customers() -> dict[int, date]:
     output_path = DATA_DIR / "customers.csv"
-
+    customer_registration_dates: dict[int, date] = {}
     with output_path.open("w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-
         writer.writerow(
             [
                 "customer_id",
@@ -115,9 +114,9 @@ def write_customers() -> None:
                     registration_date.isoformat(),
                 ]
             )
-
+    
     print(f"Создан файл: {output_path}")
-
+    return customer_registration_dates
 
 def write_products() -> list[dict[str, int | float | str]]:
     output_path = DATA_DIR / "products.csv"
@@ -168,8 +167,9 @@ def write_products() -> list[dict[str, int | float | str]]:
     return products
 
 
-def write_orders_and_items(
+def def write_orders_and_items(
     products: list[dict[str, int | float | str]],
+    customer_registration_dates: dict[int, date],
 ) -> None:
     orders_path = DATA_DIR / "orders.csv"
     items_path = DATA_DIR / "order_items.csv"
@@ -205,9 +205,11 @@ def write_orders_and_items(
         for order_id in range(1, ORDERS_COUNT + 1):
             customer_id = random.randint(1, CUSTOMERS_COUNT)
 
+            registration_date = customer_registration_dates[customer_id]
+
             order_date = random_date(
-                date(2024, 1, 1),
-                date(2026, 6, 30),
+            max(registration_date, date(2024, 1, 1)),
+            date(2026, 6, 30),
             )
 
             order_status = random.choice(ORDER_STATUSES)
@@ -266,10 +268,13 @@ def main() -> None:
 
     print("Начинаем генерацию данных...")
 
-    write_customers()
+    customer_registration_dates = write_customers()
     products = write_products()
-    write_orders_and_items(products)
 
+    write_orders_and_items(
+    	products,
+    	customer_registration_dates,
+    )
     print("Генерация завершена.")
 
 
