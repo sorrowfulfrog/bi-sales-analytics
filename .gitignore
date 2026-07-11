@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+
+# Generated datasets
+data/*.csv
+data/*.json
+data/*.parquet
+
+# Power BI temporary files
+powerbi/~$*
