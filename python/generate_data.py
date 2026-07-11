@@ -89,8 +89,10 @@ def random_date(start: date, end: date) -> date:
 def write_customers() -> dict[int, date]:
     output_path = DATA_DIR / "customers.csv"
     customer_registration_dates: dict[int, date] = {}
+
     with output_path.open("w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
+
         writer.writerow(
             [
                 "customer_id",
@@ -106,6 +108,8 @@ def write_customers() -> dict[int, date]:
                 date(2026, 6, 30),
             )
 
+            customer_registration_dates[customer_id] = registration_date
+
             writer.writerow(
                 [
                     customer_id,
@@ -114,7 +118,7 @@ def write_customers() -> dict[int, date]:
                     registration_date.isoformat(),
                 ]
             )
-    
+
     print(f"Создан файл: {output_path}")
     return customer_registration_dates
 
@@ -166,8 +170,7 @@ def write_products() -> list[dict[str, int | float | str]]:
     print(f"Создан файл: {output_path}")
     return products
 
-
-def def write_orders_and_items(
+def write_orders_and_items(
     products: list[dict[str, int | float | str]],
     customer_registration_dates: dict[int, date],
 ) -> None:
