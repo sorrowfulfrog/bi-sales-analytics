@@ -9,6 +9,8 @@ venv/
 
 # Environment variables and secrets
 .env
+.env.*
+!.env.example
 
 # Generated datasets
 data/*.csv
@@ -17,3 +19,6 @@ data/*.parquet
 
 # Power BI temporary files
 powerbi/~$*
+
+# Local integration state
+logs/

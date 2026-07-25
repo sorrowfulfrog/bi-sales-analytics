@@ -1,0 +1,12 @@
+{
+  "metrics": {
+    "revenue": "2.95B ₽",
+    "profit": "1.06B ₽",
+    "orders": "33K",
+    "customers": "10K"
+  },
+  "integrations": {
+    "jira": "Planned",
+    "bitrix24": "Planned"
+  }
+}

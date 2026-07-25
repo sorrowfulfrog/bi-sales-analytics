@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SportStore Analytics — портфельный BI-проект на PostgreSQL, Python и Power BI."
+    />
+    <title>SportStore Analytics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">SportStore<span>Analytics</span></a>
+      <nav aria-label="Основная навигация">
+        <a href="#about">О проекте</a>
+        <a href="#architecture">Архитектура</a>
+        <a href="#analytics">Аналитика</a>
+        <a href="#dashboards">Дашборды</a>
+        <a href="#integrations">Интеграции</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">BI PORTFOLIO PROJECT</p>
+          <h1>От сырых данных до управленческих решений</h1>
+          <p class="hero-text">
+            Учебная аналитическая платформа интернет-магазина: PostgreSQL,
+            Python ETL, Power BI, Jira и Bitrix24 в едином контуре данных.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#analytics">Смотреть результаты</a>
+            <a class="button secondary" href="#architecture">Как это устроено</a>
+          </div>
+        </div>
+
+        <div class="dashboard-card" aria-label="Ключевые показатели проекта">
+          <div class="dashboard-topline">
+            <span>Executive Overview</span>
+            <span class="live-dot">Portfolio demo</span>
+          </div>
+          <div class="metric-grid">
+            <article><span>Revenue</span><strong data-metric="revenue">—</strong></article>
+            <article><span>Profit</span><strong data-metric="profit">—</strong></article>
+            <article><span>Orders</span><strong data-metric="orders">—</strong></article>
+            <article><span>Customers</span><strong data-metric="customers">—</strong></article>
+          </div>
+          <div class="chart" aria-hidden="true">
+            <div style="height: 28%"></div><div style="height: 35%"></div>
+            <div style="height: 31%"></div><div style="height: 46%"></div>
+            <div style="height: 42%"></div><div style="height: 58%"></div>
+            <div style="height: 54%"></div><div style="height: 73%"></div>
+            <div style="height: 68%"></div><div style="height: 92%"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell content-section">
+        <p class="eyebrow">PROJECT SCOPE</p>
+        <h2>Полный цикл BI-разработки</h2>
+        <div class="feature-grid">
+          <article><b>01</b><h3>Data Engineering</h3><p>Генерация, проверка и загрузка данных в PostgreSQL.</p></article>
+          <article><b>02</b><h3>Analytics</h3><p>SQL-витрины, ABC, RFM, cohort и retention-анализ.</p></article>
+          <article><b>03</b><h3>Business Intelligence</h3><p>DAX-меры и восемь аналитических страниц Power BI.</p></article>
+          <article><b>04</b><h3>Operations</h3><p>Jira и CRM расширяют отчёт проектными и коммерческими KPI.</p></article>
+        </div>
+      </section>
+
+      <section id="architecture" class="dark-section">
+        <div class="section-shell content-section">
+          <p class="eyebrow">ARCHITECTURE</p>
+          <h2>Один аналитический контур</h2>
+          <div class="pipeline" aria-label="Архитектура проекта">
+            <span>Jira Cloud</span><i>→</i><span>Python ETL</span><i>→</i>
+            <span>PostgreSQL</span><i>→</i><span>Power BI</span>
+          </div>
+          <div class="pipeline secondary-pipeline">
+            <span>Bitrix24</span><i>→</i><span>Data Quality</span><i>→</i>
+            <span>SQL Marts</span><i>→</i><span>Portfolio Site</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="analytics" class="section-shell content-section">
+        <p class="eyebrow">ANALYTICS</p>
+        <h2>Что умеет платформа</h2>
+        <div class="analytics-grid">
+          <article><span>Executive</span><h3>Продажи и прибыль</h3><p>Revenue, Profit, Orders, AOV и Margin.</p></article>
+          <article><span>Customers</span><h3>RFM и retention</h3><p>Ценность, повторные покупки и риск оттока.</p></article>
+          <article><span>Products</span><h3>ABC-анализ</h3><p>Вклад ассортимента в выручку и прибыль.</p></article>
+          <article><span>Delivery</span><h3>Jira KPI</h3><p>Backlog, throughput, cycle time и выполненные задачи.</p></article>
+          <article><span>CRM</span><h3>Воронка сделок</h3><p>Pipeline, won deals, conversion и сумма продаж.</p></article>
+          <article><span>Quality</span><h3>Контроль данных</h3><p>Проверки дат, ключей, цен и бизнес-ограничений.</p></article>
+        </div>
+      </section>
+
+      <section id="dashboards" class="dashboard-gallery-section">
+        <div class="section-shell content-section">
+          <div class="section-heading-row">
+            <div>
+              <p class="eyebrow">POWER BI REPORT</p>
+              <h2>Восемь страниц аналитики</h2>
+            </div>
+            <p>
+              От управленческого обзора до сегментации клиентов и когортного
+              retention. Нажмите на изображение, чтобы открыть его крупнее.
+            </p>
+          </div>
+
+          <div class="report-gallery">
+            <button class="report-shot featured" type="button" data-lightbox="assets/screenshots/overview.png">
+              <img src="assets/screenshots/overview.png" alt="Executive Overview — ключевые KPI, категории, города и тренд продаж" loading="lazy" />
+              <span><b>Executive Overview</b><small>Revenue, Profit, Orders, Customers, AOV и Margin</small></span>
+            </button>
+            <button class="report-shot" type="button" data-lightbox="assets/screenshots/top-products.png">
+              <img src="assets/screenshots/top-products.png" alt="Top Products — рейтинг товаров по выручке" loading="lazy" />
+              <span><b>Top Products</b><small>Рейтинг наиболее доходных товаров</small></span>
+            </button>
+            <button class="report-shot" type="button" data-lightbox="assets/screenshots/orders.png">
+              <img src="assets/screenshots/orders.png" alt="Orders — статусы, отмены и динамика заказов" loading="lazy" />
+              <span><b>Orders</b><small>Объём, завершение и отмена заказов</small></span>
+            </button>
+            <button class="report-shot" type="button" data-lightbox="assets/screenshots/customers.png">
+              <img src="assets/screenshots/customers.png" alt="Customers — активность, лояльность и география клиентов" loading="lazy" />
+              <span><b>Customers</b><small>Активность, повторные покупки и география</small></span>
+            </button>
+            <button class="report-shot" type="button" data-lightbox="assets/screenshots/products.png">
+              <img src="assets/screenshots/products.png" alt="Products — продажи, прибыль и ассортимент" loading="lazy" />
+              <span><b>Products</b><small>Продажи, прибыльность и категории</small></span>
+            </button>
+            <button class="report-shot" type="button" data-lightbox="assets/screenshots/abc-analysis.png">
+              <img src="assets/screenshots/abc-analysis.png" alt="ABC Analysis — вклад классов товаров в выручку" loading="lazy" />
+              <span><b>ABC Analysis</b><small>80/15/5-классификация ассортимента</small></span>
+            </button>
+            <button class="report-shot" type="button" data-lightbox="assets/screenshots/rfm-analysis.png">
+              <img src="assets/screenshots/rfm-analysis.png" alt="RFM Analysis — ценность клиентов и риск оттока" loading="lazy" />
+              <span><b>RFM Analysis</b><small>Ценность, лояльность и риск оттока</small></span>
+            </button>
+            <button class="report-shot featured" type="button" data-lightbox="assets/screenshots/cohort-analysis.png">
+              <img src="assets/screenshots/cohort-analysis.png" alt="Cohort Analysis — тепловая карта ежемесячного retention" loading="lazy" />
+              <span><b>Cohort Analysis</b><small>Monthly customer retention heatmap</small></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="integrations" class="section-shell content-section integrations">
+        <div>
+          <p class="eyebrow">INTEGRATIONS</p>
+          <h2>Новые источники данных</h2>
+          <p>
+            API-ключи используются только серверным ETL и никогда не попадают
+            в браузер. Публичный сайт получает безопасные агрегаты.
+          </p>
+        </div>
+        <div class="integration-list">
+          <div><span>Jira Cloud</span><b data-status="jira">Planned</b></div>
+          <div><span>Bitrix24 CRM</span><b data-status="bitrix24">Planned</b></div>
+          <div><span>Power BI</span><b class="ready">Ready</b></div>
+          <div><span>PostgreSQL</span><b class="ready">Ready</b></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>SportStore Analytics</span>
+      <span>PostgreSQL · Python · Power BI · Jira · Bitrix24</span>
+    </footer>
+
+    <dialog class="lightbox" aria-label="Увеличенный скриншот Power BI">
+      <button class="lightbox-close" type="button" aria-label="Закрыть">×</button>
+      <img alt="" />
+    </dialog>
+  </body>
+</html>
