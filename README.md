@@ -62,6 +62,11 @@ flowchart LR
 <details>
 <summary>Открыть дополнительные скриншоты</summary>
 
+![Executive Overview](images/orders.png)
+![Orders](site/assets/screenshots/orders.png)
+![Orders](site/assets/screenshots/orders.png)
+![Orders](site/assets/screenshots/orders.png)
+![Orders](site/assets/screenshots/orders.png)
 ![Orders](site/assets/screenshots/orders.png)
 ![RFM Analysis](site/assets/screenshots/rfm-analysis.png)
 ![Cohort Analysis](site/assets/screenshots/cohort-analysis.png)
