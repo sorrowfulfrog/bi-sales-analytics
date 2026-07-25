@@ -1,6 +1,3 @@
--- External-system landing tables and Power BI marts.
--- Secrets are never stored in PostgreSQL.
-
 CREATE TABLE IF NOT EXISTS jira_issues (
     issue_key VARCHAR(50) PRIMARY KEY,
     project_key VARCHAR(50) NOT NULL,
