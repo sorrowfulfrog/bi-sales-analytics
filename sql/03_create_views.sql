@@ -1,5 +1,3 @@
--- Представления для аналитики и Power BI
-
 CREATE OR REPLACE VIEW sales_report AS
 SELECT
     o.order_id,
@@ -36,7 +34,6 @@ JOIN order_items AS oi
 JOIN products AS p
     ON p.product_id = oi.product_id;
 
--- Дневные KPI для Power BI
 
 CREATE OR REPLACE VIEW daily_kpi AS
 
