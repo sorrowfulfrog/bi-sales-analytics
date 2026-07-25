@@ -74,7 +74,7 @@ flowchart LR
 - Docker Compose и pgAdmin;
 - Python, Faker, psycopg, Requests и python-dotenv;
 - Power BI Desktop, Power Query и DAX;
-- Git и статический HTML/CSS/JavaScript;
+- Git и статический HTML/CSS;
 - Jira Cloud REST API и Bitrix24 webhook — опциональные источники.
 
 ## Быстрый запуск
