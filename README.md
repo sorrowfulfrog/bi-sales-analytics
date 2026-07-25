@@ -62,14 +62,14 @@ flowchart LR
 <details>
 <summary>Открыть дополнительные скриншоты</summary>
 
-![Executive Overview](images/Executive Overview.png)
-![Top Products](images/Top Products.png)
+![Executive Overview](images/Executive-Overview.png)
+![Top Products](images/Top-Products.png)
 ![Orders](images/Orders.png)
 ![Customers](images/Customers.png)
 ![Products](images/Products.png)
-![ABC Analysis](images/ABC Analysis.png)
-![RFM Analysis](images/RFM Analysis.png)
-![Cohort Analysis](images/Cohort Analysis.png)
+![ABC Analysis](images/ABC-Analysis.png)
+![RFM Analysis](images/RFM-Analysis.png)
+![Cohort Analysis](images/Cohort-Analysis.png)
 
 </details>
 
